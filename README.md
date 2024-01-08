@@ -1,2 +1,2 @@
 # ohmyfood
-Site de Oh My Food.
+Site de Oh My Food - Paris.

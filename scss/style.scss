@@ -1,0 +1,15 @@
+@use 'partials';
+
+// Variables des couleurs.
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+
+// Variable des fonts.
+$title-logo-font: Shrikhand, sans-serif;
+$text-font: Roboto, sans-serif;
+
+body {
+  background: lightsalmon;
+}
+.title {color: $primary-color; font-family: $title-logo-font;}

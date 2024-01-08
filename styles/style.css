@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  background: lightsalmon;
+}
+
+.title {
+  color: #9356dc;
+  font-family: Shrikhand, sans-serif;
+}/*# sourceMappingURL=style.css.map */
