@@ -1,15 +1,76 @@
 @use 'partials';
 
-// Variables des couleurs.
+// Variables des couleurs
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 
-// Variable des fonts.
-$title-logo-font: Shrikhand, sans-serif;
-$text-font: Roboto, sans-serif;
+// Variable des polices
+$ff-title: Shrikhand, sans-serif;
+$ff-text: Roboto, sans-serif;
 
 body {
-  background: lightsalmon;
+  max-width: 375px;
+  margin: 0 auto;
 }
-.title {color: $primary-color; font-family: $title-logo-font;}
+// Header du site avec son logo
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  background: lightblue;
+}
+
+// Sous-header, localisation des restaurants
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: lightseagreen;
+}
+
+// CTA proposition des restaurants
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 226px;
+  background: lightgreen;
+}
+
+.div1__button {
+  border-radius: 25px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 440px;;
+  background: lightblue;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 1300px;
+  background: lightcoral;
+}
+
+.div4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 185px;
+  background: lime;
+}

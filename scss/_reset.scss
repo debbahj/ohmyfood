@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 html {
@@ -14,4 +15,9 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

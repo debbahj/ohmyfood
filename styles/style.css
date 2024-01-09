@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 html {
@@ -16,11 +17,71 @@ a:active {
   text-decoration: none;
 }
 
-body {
-  background: lightsalmon;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.title {
-  color: #9356dc;
-  font-family: Shrikhand, sans-serif;
+body {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  background: lightblue;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: lightseagreen;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 226px;
+  background: lightgreen;
+}
+
+.div1__button {
+  border-radius: 25px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 440px;
+  background: lightblue;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 1300px;
+  background: lightcoral;
+}
+
+.div4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 185px;
+  background: lime;
 }/*# sourceMappingURL=style.css.map */
