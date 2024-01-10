@@ -52,6 +52,9 @@ body {
   height: 226px;
   background: lightgreen;
 }
+.div1__title {
+  font-family: serif;
+}
 
 .div1__button {
   border-radius: 25px;
