@@ -2,8 +2,6 @@
 
 @use "./base/reset";
 
-@use "./layouts/header";
-@use "./layouts/footer";
+@use "./layouts/" as layouts;
 
-@use "./components/buttons";
-@use "./components/loader";
+@use "./components/" as components;

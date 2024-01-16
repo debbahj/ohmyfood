@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; // Pour afficher l'ombre d'en dessous
   height: 63px;
-  background: lightblue;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }

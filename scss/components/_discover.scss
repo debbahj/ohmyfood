@@ -1,0 +1,16 @@
+.discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #F6F6F6;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

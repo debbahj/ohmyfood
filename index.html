@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
     <header class="header">
@@ -18,20 +18,24 @@
     </header>
 
     <main class="main">
-        <div class="input">
-            <img src="https://placehold.co/140x20" alt="">
+        <div class="location">
+            <i class="location__icon fa-location-dot"></i>
+            <input type="text" class="location__input" placeholder="Recherchez un lieu..." value="Paris, Belleville">
         </div>
 
-        <div class="div1">
-            <p class="div1__title"  >Réservez le menu qui vous convient</p>
-            <p class="div1__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <img class="div1__button" src="https://placehold.co/220x50" alt="">
-        </div>
+        <div class="discover">
+            <h1 class="discover__title"  >Réservez le menu qui vous convient</h1>
+            <p class="discover__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <button class="discover__button button">Explorer nos restaurants</button>
+         </div>
 
-        <div class="div2">
-            <img src="https://placehold.co/322x72" alt="">
-            <img src="https://placehold.co/322x72" alt="">
-            <img src="https://placehold.co/322x72" alt="">
+        <div class="how-to-use">
+            <h1 class="how-to-use__title">Fonctionnement</h1>
+            <div class="how-to-use__button">
+                <button>Choisissez un restaurant</button>
+                <button>Composez votre menu</button>
+                <button>Dégustez au restaurant</button>
+            </div>
         </div>
 
         <div class="div3">
@@ -47,6 +51,6 @@
             <img src="https://placehold.co/325x140" alt="">
         </div>
     </footer>
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 </body>
 </html>
