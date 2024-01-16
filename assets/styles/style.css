@@ -1,1 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  background: lightblue;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
