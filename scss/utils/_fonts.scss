@@ -1,3 +1,47 @@
-// Variable des polices
+// Polices de OhMyFood
 $ff-title: Shrikhand, sans-serif;
 $ff-text: Roboto, sans-serif; // Par defaut
+
+// Taille des polices
+.font__home { // font de la page d'accueil
+    &--title {
+        font-size: 1.5rem; // 24px
+        font-weight: 700;
+    }
+    &--subtitle {
+        font-size: 1.125rem; // 18px
+        font-weight: 300;
+    }
+    // &--desc {
+    //     font-size: 1rem; // 16px
+    //     font-weight: 500;
+    // }
+    &--restaurant {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    &--location {
+        font-size: 1.063rem; // 17px
+        font-weight: 300;    
+    }
+}
+
+.font__menu {
+    &--restaurant { // Nom du restaurant
+    font-family: $ff-title;
+    font-size: 1.75rem; // 28px
+    font-weight: 400;
+    }
+    &--desc { // En-tete des plats (Entrees, Plats, Desserts)
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    &--dishe { // Nom du plat
+        font-size: 1.125rem;
+        font-weight: 500;
+    }    
+    &--side-dishe { // Accompagnement du plat
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}

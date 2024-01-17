@@ -5,13 +5,15 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    background: utils.$color-bg;
+    background: utils.$color-input-bg;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     &__input {
         border: none;
         outline: none;
         text-align: center;
+        width: 150px;
+        height: 20px;
         font-size: 16px;
-        background: utils.$color-bg;
+        background: utils.$color-input-bg;
     }
 }

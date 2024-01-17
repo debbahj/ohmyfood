@@ -1,8 +1,16 @@
-// Variables des couleurs
+// Couleurs principale de OhMyFood
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-gradient: linear-gradient(193deg, $color-primary -11.44%, $color-secondary 123.93%);
+
+// Couleur des boutons
+$color-button: linear-gradient(193deg, $color-primary -11.44%, $color-secondary 123.93%);
 $color-button-text: #FFF;
-$color-new: #008766;
-$color-bg: #EAEAEA;
+
+// Couleur des notifications 'Nouveau'
+$color-new: #99E2D0;
+$color-new-text: #008766;
+
+// Couleurs des differents fond
+$color-bg: #F6F6F6;
+$color-input-bg: #EAEAEA;
