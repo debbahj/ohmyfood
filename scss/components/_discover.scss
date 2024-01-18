@@ -7,5 +7,14 @@
     align-items: center;
     text-align: center;
     padding: 30px 20px 35px;
+    gap: 18px;
     background: utils.$color-bg;
+    &__title,
+    &__subtitle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__button {
+        margin: 10px 0;
+    }
 }
