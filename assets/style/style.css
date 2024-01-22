@@ -33,6 +33,19 @@
   font-weight: 300;
 }
 
+.fas {
+  font-size: 20px;
+}
+
+.fa-mobile-screen-button,
+.fa-list-ul {
+  color: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
 * {
   font-family: Roboto, sans-serif;
 }
@@ -137,12 +150,26 @@ img {
 }
 .how-to-use__list--item {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   min-width: 322px;
   height: 72px;
   gap: 20px;
-  background: lightsalmon;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: #F6F6F6;
+}
+.how-to-use__list--number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  color: white;
+  border-radius: 20px;
+  background: #9356DC;
 }
 
 .loader {

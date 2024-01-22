@@ -1,0 +1,14 @@
+@use "./variables" as utils;
+
+.fas {
+    font-size: 20px;
+}
+
+.fa-mobile-screen-button,
+.fa-list-ul {
+    color: #7E7E7E;
+}
+
+.fa-store {
+    color: utils.$color-primary;
+}
