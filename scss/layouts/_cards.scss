@@ -1,0 +1,29 @@
+@use "../utils/variables" as var;
+
+.restaurant__card {
+    // position: relative;
+    background: white;
+    border-radius: 15px;
+    &--img {
+        // position: relative;
+        border-radius: 15px 15px 0 0;
+    }
+
+    &--desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 5px;
+        padding: 12px;
+    }
+}
+
+.new::before {
+position: absolute;
+content: "Nouveau";
+top: 5px;
+right: 5px;
+padding: 10px;
+color: var.$color-new-text;
+background: var.$color-new;
+}
