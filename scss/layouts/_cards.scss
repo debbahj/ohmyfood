@@ -19,11 +19,11 @@
 }
 
 .new::before {
-position: absolute;
-content: "Nouveau";
-top: 5px;
-right: 5px;
-padding: 10px;
-color: var.$color-new-text;
-background: var.$color-new;
+    position: absolute;
+    content: "Nouveau";
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    color: var.$color-new-text;
+    background: var.$color-new;
 }

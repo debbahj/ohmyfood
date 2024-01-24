@@ -1,0 +1,19 @@
+@use "../utils/variables" as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 25px;
+    background: $color-footer-bg;
+}
+
+.footer__text {
+    color: white;
+}
+
+.footer__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}

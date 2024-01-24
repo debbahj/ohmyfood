@@ -1,9 +1,5 @@
 @use "./variables" as utils;
 
-.fas {
-    font-size: 20px;
-}
-
 .fa-mobile-screen-button,
 .fa-list-ul {
     color: #7E7E7E;
@@ -18,4 +14,9 @@
     top: 20px;
     right: 25px;
     font-size: 20px;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+    color: white;
 }

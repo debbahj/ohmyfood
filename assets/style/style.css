@@ -33,10 +33,6 @@
   font-weight: 300;
 }
 
-.fas {
-  font-size: 20px;
-}
-
 .fa-mobile-screen-button,
 .fa-list-ul {
   color: #7E7E7E;
@@ -51,6 +47,11 @@
   top: 20px;
   right: 25px;
   font-size: 20px;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+  color: white;
 }
 
 * {
@@ -92,6 +93,24 @@ img {
   z-index: 1;
   height: 63px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px;
+  background: #353535;
+}
+
+.footer__text {
+  color: white;
+}
+
+.footer__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .restaurant__card {
