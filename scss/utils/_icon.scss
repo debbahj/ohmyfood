@@ -14,9 +14,28 @@
     top: 20px;
     right: 25px;
     font-size: 20px;
+    &::after {
+        display: block;
+        content: "\f004";
+        position: absolute;
+        font-weight: 900;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
 }
 
 .fa-utensils,
 .fa-handshake-angle {
     color: white;
+    font-size: 13px;
+    width: 12px;
 }

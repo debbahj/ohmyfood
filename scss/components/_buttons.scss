@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
 .button {
+    cursor: pointer;
     height: 50px;
     border: none;
     border-radius: 25px;

@@ -6,6 +6,10 @@
   font-size: 1.125rem;
   font-weight: 300;
 }
+.font__home--desc {
+  font-size: 1rem;
+  font-weight: 500;
+}
 .font__home--restaurant {
   font-size: 1.125rem;
   font-weight: 700;
@@ -13,6 +17,14 @@
 .font__home--location {
   font-size: 1.063rem;
   font-weight: 300;
+}
+.font__home--footer {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.font__home--footer--desc {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .font__menu--restaurant {
@@ -48,10 +60,29 @@
   right: 25px;
   font-size: 20px;
 }
+.fa-heart::after {
+  display: block;
+  content: "\f004";
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-heart:hover::after {
+  opacity: 1;
+}
 
 .fa-utensils,
 .fa-handshake-angle {
   color: white;
+  font-size: 13px;
+  width: 12px;
 }
 
 * {
@@ -76,8 +107,10 @@ body {
 
 a,
 a:visited,
-a:active {
+a:active,
+a:hover {
   text-decoration: none;
+  color: black;
 }
 
 img {
@@ -100,24 +133,32 @@ img {
   flex-direction: column;
   gap: 16px;
   padding: 22px 25px;
+  color: white;
   background: #353535;
 }
-
-.footer__text {
-  color: white;
+.footer__title {
+  font-family: Shrikhand, sans-serif;
 }
-
 .footer__subtitle {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
+.footer__subtitle--icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 .restaurant__card {
+  position: relative;
   background: white;
   border-radius: 15px;
 }
 .restaurant__card--img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .restaurant__card--desc {
@@ -128,14 +169,24 @@ img {
   padding: 12px;
 }
 
-.new::before {
+.new {
+  position: relative;
+}
+.new::after {
   position: absolute;
   content: "Nouveau";
-  top: 5px;
-  right: 5px;
-  padding: 10px;
+  top: 15px;
+  right: 15px;
+  padding: 7px 9px;
+  font-size: 14px;
+  border-radius: 3px;
   color: #008766;
   background: #99E2D0;
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.1, 0.2, 0.5, 1.5);
+}
+.new:hover.new::after {
+  transform: scale(1.25);
 }
 
 .restaurant {
@@ -149,11 +200,12 @@ img {
 
 .restaurant__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 18px;
 }
 
 .button {
+  cursor: pointer;
   height: 50px;
   border: none;
   border-radius: 25px;
@@ -161,7 +213,7 @@ img {
   font-weight: 500;
   padding: 13px 18.75px;
   color: #FFF;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -230,7 +282,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 10px;
+  left: -12px;
   width: 24px;
   height: 24px;
   color: white;

@@ -1,19 +1,23 @@
-@use "../utils/variables" as *;
+@use "../utils/index" as *;
 
 .footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 22px 25px;
-    background: $color-footer-bg;
-}
-
-.footer__text {
     color: white;
-}
-
-.footer__subtitle {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    background: $color-footer-bg;
+    &__title {
+        font-family: $ff-title;
+    }
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        &--icon {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
 }

@@ -12,10 +12,10 @@ $ff-text: Roboto, sans-serif; // Par defaut
         font-size: 1.125rem; // 18px
         font-weight: 300;
     }
-    // &--desc {
-    //     font-size: 1rem; // 16px
-    //     font-weight: 500;
-    // } inutile ?
+    &--desc {
+        font-size: 1rem; // 16px
+        font-weight: 500;
+    }
     &--restaurant {
         font-size: 1.125rem;
         font-weight: 700;
@@ -23,6 +23,14 @@ $ff-text: Roboto, sans-serif; // Par defaut
     &--location {
         font-size: 1.063rem; // 17px
         font-weight: 300;    
+    }
+    &--footer {
+        font-size: 1.125rem;
+        font-weight: 400;
+        &--desc {
+            font-size: 1rem;
+            font-weight: 500;
+        }
     }
 }
 
