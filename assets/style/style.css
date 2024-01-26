@@ -106,11 +106,9 @@ body {
 }
 
 a,
-a:visited,
-a:active,
-a:hover {
-  text-decoration: none;
+a:any-link {
   color: black;
+  text-decoration: none;
 }
 
 img {
@@ -133,10 +131,10 @@ img {
   flex-direction: column;
   gap: 16px;
   padding: 22px 25px;
-  color: white;
   background: #353535;
 }
 .footer__title {
+  color: white;
   font-family: Shrikhand, sans-serif;
 }
 .footer__subtitle {
@@ -148,6 +146,9 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.footer a {
+  color: white;
 }
 
 .restaurant__card {
