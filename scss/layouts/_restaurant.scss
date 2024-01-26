@@ -3,14 +3,64 @@
 .restaurant {
     background: utils.$color-bg;
     padding: 66px 20px;
+
+    &__title {
+        padding-bottom: 20px;
+    }
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 18px;
+    }
+
+    i {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 20px;
+        &::after {
+            display: block;
+            content: "\f004";
+            position: absolute;
+            font-weight: 900;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
 }
 
-.restaurant__title {
-    padding-bottom: 20px;
-}
+.menuMain {
 
-.restaurant__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 18px;
+    &__img {
+        height: 275px;
+    }
+
+    &__menu {
+        display: flex;
+        padding: 0 17px;
+        gap: 40px;
+        border-radius: 40px 40px 0 0;
+
+        position: relative;
+        margin-top: -25px;
+        padding-top: 30px;
+        background: lightsalmon;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        font-size: 22px;
+    }
 }
