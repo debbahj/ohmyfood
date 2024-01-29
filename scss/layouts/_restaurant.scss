@@ -40,6 +40,7 @@
 }
 
 .menuMain {
+    background: utils.$color-bg;
 
     &__img {
         height: 275px;
@@ -52,9 +53,10 @@
         border-radius: 40px 40px 0 0;
 
         position: relative;
+        top: -35px;
         margin-top: -25px;
         padding-top: 30px;
-        background: lightsalmon;
+        background: utils.$color-bg;
     }
 
     &__title {
