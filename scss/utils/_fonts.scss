@@ -40,7 +40,7 @@ $ff-text: Roboto, sans-serif; // Par defaut
     font-size: 1.75rem; // 28px
     font-weight: 400;
     }
-    &--desc { // En-tete des plats (Entrees, Plats, Desserts)
+    &--desc { // En-tete des plats (Entrees, Plats, Desserts) + Accompagnement du plat
         font-size: 1rem;
         font-weight: 300;
     }
@@ -48,8 +48,7 @@ $ff-text: Roboto, sans-serif; // Par defaut
         font-size: 1.125rem;
         font-weight: 500;
     }    
-    &--side-dishe { // Accompagnement du plat
-        font-size: 1rem;
-        font-weight: 300;
+    &--price {
+        font-weight: 700;
     }
 }
