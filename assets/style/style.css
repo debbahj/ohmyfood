@@ -326,7 +326,7 @@ img {
 .menuMain__title {
   display: flex;
   align-items: center;
-  gap: 85px;
+  justify-content: space-between;
   font-size: 22px;
 }
 .menuMain__container {
@@ -375,24 +375,11 @@ img {
 .menuMain__button .button {
   width: 185px;
 }
-.menuMain i {
-  font-size: 20px;
+.menuMain__label input {
+  display: none;
 }
-.menuMain i::after {
-  content: "\f004";
-  position: relative;
-  font-weight: 900;
-  top: 0;
-  left: -20px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  background: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menuMain i:hover::after {
-  opacity: 1;
+.menuMain__label input:checked ~ i {
+  color: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 /*# sourceMappingURL=style.css.map */
