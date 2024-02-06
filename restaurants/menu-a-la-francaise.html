@@ -39,8 +39,11 @@
           </div>
           <div class="menuMain__title--icon">
             <label class="menuMain__label">
-              <input type="checkbox">
-              <i class="fa-regular fa-heart"></i>
+              <span class="fa-stack">
+                <input type="checkbox">
+                <i class="far fa-stack-1x fa-heart unfavorite"></i>
+                <i class="fas fa-stack-1x fa-heart favorite"></i>
+              </span>
             </label>
           </div>
         </div>
@@ -53,30 +56,21 @@
             <div class="menuMain__subtitle--underline"></div>
           </div>
 
-<label class="test1">
-  <input type="checkbox">
-  <i class="far fa-thumbs-up"></i>
-</label>
-<style>
-  .test1 input {opacity: 0;}
-  .test1 input:checked ~ i {color: aqua;}
-  
-
-</style>
-
-
-
-          <a href="#">
-          <div class="menuMain__dishe">
-            <div class="menuMain__dishe--desc">
-              <p class="font__menu--dishe">Tartare de poulpe acidulé</p>
-              <p class="font__menu--desc">Aux zestes d'orange</p>
+          <label class="menuMain__label">
+            <input type="checkbox">
+            <div class="checked">
+              <div class="menuMain__dishe">
+                <div class="menuMain__dishe--desc">
+                  <p class="font__menu--dishe">Tartare de poulpe acidulé</p>
+                  <p class="font__menu--desc">Aux zestes d'orange</p>
+                </div>
+                <div class="menuMain__dishe--price">
+                  <p class="font__menu--price">25<span>€</span></p>
+                </div>
+              </div>
             </div>
-            <div class="menuMain__dishe--price">
-              <p class="font__menu--price">25<span>€</span></p>
-            </div>
-          </div>
-        </a>
+            </label>
+            
           <div class="menuMain__dishe">
             <div class="menuMain__dishe--desc">
               <p class="font__menu--dishe">Velouté de légumes d'antan</p>

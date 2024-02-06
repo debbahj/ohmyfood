@@ -1,140 +1,179 @@
 @use "../utils/variables" as utils;
-@use '../components/index' as comp;
+@use "../components/index" as comp;
 
 .restaurant {
-    background: utils.$color-bg;
-    padding: 66px 20px;
+  background: utils.$color-bg;
+  padding: 66px 20px;
 
-    &__title {
-        padding-bottom: 20px;
-    }
-    
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 18px;
-    }
+  &__title {
+    padding-bottom: 20px;
+  }
 
-    i {
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        font-size: 20px;
-        &::after {
-            display: block;
-            content: "\f004";
-            position: absolute;
-            font-weight: 900;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.2s ease-in-out;
-            background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        &:hover::after {
-            opacity: 1;
-        }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+  }
+
+  i {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 20px;
+    &::after {
+      display: block;
+      content: "\f004";
+      position: absolute;
+      font-weight: 900;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      background: linear-gradient(
+        180deg,
+        utils.$color-primary -11.44%,
+        utils.$color-secondary 123.93%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
 }
 
 .menuMain {
+  background: utils.$color-bg;
+
+  &__img {
+    height: 275px;
+  }
+
+  &__menu {
+    padding: 0 17px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -35px;
+    margin-top: -25px;
+    padding-top: 30px;
     background: utils.$color-bg;
+  }
 
-    &__img {
-        height: 275px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 13px;
+    gap: 40px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &:hover {
+      .menuMain__subtitle--underline {
+        width: 100%;
+        transition: width 0.2s ease-in-out;
+      }
     }
-
-    &__menu {
-        // display: flex;
-        padding: 0 17px;
-        border-radius: 40px 40px 0 0;
-        position: relative;
-        top: -35px;
-        margin-top: -25px;
-        padding-top: 30px;
-        background: utils.$color-bg;
+  }
+  &__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &--underline {
+      width: 40px;
+      height: 3px;
+      background: utils.$color-tertiary;
     }
-
-    &__title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 22px;
+  }
+  &__dishe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    &:hover {
+      background: utils.$color-tertiary;
+      transition: background 0.3s ease-in-out;
     }
-    &__container {
-        display: flex;
-        flex-direction: column;
-        padding: 0 13px;
-        gap: 40px;
+    &--desc {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
     }
-    &__card {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    a {
+      border-radius: 25px;
     }
-    &__subtitle {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        &--underline {
-            width: 40px;
-            height: 3px;
-            background: utils.$color-tertiary;
-        }
+    .button {
+      width: 185px;
     }
-    &__dishe {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 15px;
-        border-radius: 15px;
-        background: white;
-        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-        &--desc {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
+  }
+  &__label {
+    cursor: pointer;
+    & input {
+      display: none;
     }
-    &__button {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 40px;
-        a {
-            border-radius: 25px;
-        }
-        .button {
-            width: 185px;
-        }
+    & .favorite {
+      opacity: 0;
     }
-    // i {
-    //     font-size: 20px;
-    //     &::after {
-    //         content: "\f004";
-    //         position: relative;
-    //         font-weight: 900;
-    //         top: 0;
-    //         left: -20px;
-    //         opacity: 0;
-    //         transition: opacity 0.2s ease-in-out;
-    //         background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
-    //         background-clip: text;
-    //         -webkit-background-clip: text;
-    //         -webkit-text-fill-color: transparent;
-    //     }
-    //     &:hover::after {
-    //         opacity: 1;
-    //     }
-    // }
-    &__label {
-        & input {
-            display: none;
-        }
-        & input:checked ~ i {
-            color: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
-        }
+    & input:checked ~ .favorite {
+      opacity: 1;
+      transition: opacity 1.2s ease-in-out;
+      background: linear-gradient(
+        180deg,
+        utils.$color-primary -11.44%,
+        utils.$color-secondary 123.93%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
     }
+    & input:checked ~ .unfavorite {
+      opacity: 0;
+    }
+  }
 }
+
+// i {
+//     font-size: 20px;
+//     &::after {
+//         content: "\f004";
+//         position: relative;
+//         font-weight: 900;
+//         top: 0;
+//         left: -20px;
+//         opacity: 0;
+//         transition: opacity 0.2s ease-in-out;
+//         background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
+//         background-clip: text;
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//         -moz-background-clip: text;
+//         -moz-text-fill-color: transparent;
+//     }
+//     &:hover::after {
+//         opacity: 1;
+//     }
+// }

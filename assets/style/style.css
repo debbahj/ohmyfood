@@ -327,7 +327,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 20px;
 }
 .menuMain__container {
   display: flex;
@@ -339,6 +339,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.menuMain__card:hover .menuMain__subtitle--underline {
+  width: 100%;
+  transition: width 0.2s ease-in-out;
 }
 .menuMain__subtitle {
   display: flex;
@@ -359,10 +363,19 @@ img {
   background: white;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
+.menuMain__dishe:hover {
+  background: #99E2D0;
+  transition: background 0.3s ease-in-out;
+}
 .menuMain__dishe--desc {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.menuMain__dishe--desc p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menuMain__button {
   display: flex;
@@ -375,11 +388,27 @@ img {
 .menuMain__button .button {
   width: 185px;
 }
+.menuMain__label {
+  cursor: pointer;
+}
 .menuMain__label input {
   display: none;
 }
-.menuMain__label input:checked ~ i {
-  color: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
+.menuMain__label .favorite {
+  opacity: 0;
+}
+.menuMain__label input:checked ~ .favorite {
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out;
+  background: linear-gradient(180deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.menuMain__label input:checked ~ .unfavorite {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
