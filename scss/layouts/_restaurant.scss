@@ -80,7 +80,6 @@
     &:hover {
       .menuMain__subtitle--underline {
         width: 100%;
-        transition: width 0.2s ease-in-out;
       }
     }
   }
@@ -92,29 +91,21 @@
       width: 40px;
       height: 3px;
       background: utils.$color-tertiary;
+      transition: width 0.3s ease-in-out;
     }
   }
   &__dishe {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
     padding: 15px;
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    &:hover {
-      background: utils.$color-tertiary;
-      transition: background 0.3s ease-in-out;
-    }
+    transition: width 0.25s cubic-bezier(0.2, 0.5, 0.3, 1);
+
     &--desc {
       display: flex;
       flex-direction: column;
       gap: 5px;
-      p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      }
     }
   }
   &__button {
@@ -128,6 +119,43 @@
       width: 185px;
     }
   }
+  &__meal {
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, box-shadow 0.5s ease-in-out,
+      transform 0.5s ease-in-out;
+    &:hover {
+      background: lighten(utils.$color-tertiary, 20);
+      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+    &:hover .checked {
+      transform: translateX(-60px);
+    }
+    &:hover .menuMain__dishe {
+      width: calc(100% - 60px);
+    }
+    & .checked {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: -60px;
+      width: 60px;
+      height: 100%;
+      background: utils.$color-tertiary;
+      transform: translateX(0px);
+      transition: transform 0.5s cubic-bezier(0.2, 0.5, 0.3, 1);
+      & .fas {
+        color: #fff;
+        font-size: 1.25rem;
+      }
+    }
+  }
   &__label {
     cursor: pointer;
     & input {
@@ -135,9 +163,6 @@
     }
     & .favorite {
       opacity: 0;
-    }
-    & input:checked ~ .favorite {
-      opacity: 1;
       transition: opacity 1.2s ease-in-out;
       background: linear-gradient(
         180deg,
@@ -150,8 +175,11 @@
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
     }
+    & input:checked ~ .favorite {
+      opacity: 1;
+    }
     & input:checked ~ .unfavorite {
-      opacity: 0;
+      // opacity: 0;
     }
   }
 }
