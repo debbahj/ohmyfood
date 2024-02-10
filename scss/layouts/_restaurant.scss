@@ -20,6 +20,7 @@
     top: 20px;
     right: 25px;
     font-size: 20px;
+
     &::after {
       display: block;
       content: "\f004";
@@ -38,6 +39,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     &:hover::after {
       opacity: 1;
     }
@@ -46,10 +48,6 @@
 
 .menuMain {
   background: utils.$color-bg;
-
-  &__img {
-    height: 275px;
-  }
 
   &__menu {
     padding: 0 17px;
@@ -67,12 +65,14 @@
     justify-content: space-between;
     font-size: 20px;
   }
+
   &__container {
     display: flex;
     flex-direction: column;
-    padding: 0 13px;
     gap: 40px;
+    padding: 0 13px;
   }
+
   &__card {
     display: flex;
     flex-direction: column;
@@ -83,6 +83,7 @@
       }
     }
   }
+
   &__subtitle {
     display: flex;
     flex-direction: column;
@@ -94,6 +95,7 @@
       transition: width 0.3s ease-in-out;
     }
   }
+
   &__dishe {
     display: flex;
     justify-content: space-between;
@@ -108,17 +110,21 @@
       gap: 5px;
     }
   }
+
   &__button {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+
     a {
       border-radius: 25px;
     }
+
     .button {
       width: 185px;
     }
   }
+
   &__meal {
     position: relative;
     overflow: hidden;
@@ -127,17 +133,21 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out, box-shadow 0.5s ease-in-out,
       transform 0.5s ease-in-out;
+
     &:hover {
       background: lighten(utils.$color-tertiary, 20);
       box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
       transform: scale(1.05);
     }
+
     &:hover .checked {
       transform: translateX(-60px);
     }
+
     &:hover .menuMain__dishe {
       width: calc(100% - 60px);
     }
+
     & .checked {
       display: flex;
       justify-content: center;
@@ -150,17 +160,20 @@
       background: utils.$color-tertiary;
       transform: translateX(0px);
       transition: transform 0.5s cubic-bezier(0.2, 0.5, 0.3, 1);
+
       & .fas {
         color: #fff;
         font-size: 1.25rem;
       }
     }
   }
+
   &__label {
     cursor: pointer;
     & input {
       display: none;
     }
+
     & .favorite {
       opacity: 0;
       transition: opacity 1.2s ease-in-out;
@@ -175,33 +188,9 @@
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
     }
+
     & input:checked ~ .favorite {
       opacity: 1;
     }
-    & input:checked ~ .unfavorite {
-      // opacity: 0;
-    }
   }
 }
-
-// i {
-//     font-size: 20px;
-//     &::after {
-//         content: "\f004";
-//         position: relative;
-//         font-weight: 900;
-//         top: 0;
-//         left: -20px;
-//         opacity: 0;
-//         transition: opacity 0.2s ease-in-out;
-//         background: linear-gradient(180deg, utils.$color-primary -11.44%, utils.$color-secondary 123.93%);
-//         background-clip: text;
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         -moz-background-clip: text;
-//         -moz-text-fill-color: transparent;
-//     }
-//     &:hover::after {
-//         opacity: 1;
-//     }
-// }

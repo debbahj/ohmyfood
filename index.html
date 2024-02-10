@@ -23,24 +23,24 @@
             <input type="text" class="location__input" placeholder="Recherchez un lieu..." value="Paris, Belleville">
         </div>
 
-        <div class="discover">
+        <section class="discover">
             <h1 class="discover__title font__home--title"  >Réservez le menu qui vous convient</h1>
             <p class="discover__subtitle font__home--subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <a href="#restaurant" class="link">
                 <button class="discover__button button">Explorer nos restaurants</button>
             </a>
-         </div>
+         </section>
 
-        <div class="how-to-use">
+        <section class="how-to-use">
             <h1 class="how-to-use__title font__home--title">Fonctionnement</h1>
             <div class="how-to-use__list">
                 <div class="how-to-use__list--item"><div class="how-to-use__list--number">1</div><i class="fas fa-mobile-screen-button icon-grey"></i>Choisissez un restaurant</div>
                 <div class="how-to-use__list--item"><div class="how-to-use__list--number">2</div><i class="fas fa-list-ul icon-grey"></i>Composez votre menu</div>
                 <div class="how-to-use__list--item"><div class="how-to-use__list--number">3</div><i class="fas fa-store icon-purple"></i>Dégustez au restaurant</div>
             </div>
-        </div>
+        </section>
 
-        <div class="restaurant" id="restaurant">
+        <section class="restaurant" id="restaurant">
             <h1 class="restaurant__title font__home--title">Restaurants</h1>
             <div class="restaurant__container">
                 <a href="./restaurants/menu-la-palette-du-gout.html" class="link">
@@ -88,7 +88,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -96,10 +96,14 @@
             <a href="./index.html"><p class="footer__title font__home--footer">ohmyfood</p></a>
         </div>
         <div class="footer__subtitle font__home--footer--desc">
-            <a href="#"><p class="footer__subtitle--icon"><i class="fas fa-utensils"></i>Proposer un restaurant</p></a>
-            <a href="#"><p class="footer__subtitle--icon"><i class="fas fa-handshake-angle"></i>Devenir partenaire</p></a>
-            <a href="#"><p>Mentions légales</p></a>
-            <a href="#"><p>Contact</p></a>
+            <div class="footer__gap">  
+                <a href="#"><p class="footer__subtitle--icon"><i class="fas fa-utensils"></i>Proposer un restaurant</p></a>
+                <a href="#"><p class="footer__subtitle--icon"><i class="fas fa-handshake-angle"></i>Devenir partenaire</p></a>
+            </div>
+            <div class="footer__gap">
+                <a href="#"><p>Mentions légales</p></a>
+                <a href="#"><p>Contact</p></a>
+            </div>
         </div>
     </footer>
     <!-- <div class="loader"></div> -->

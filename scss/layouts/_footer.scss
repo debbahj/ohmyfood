@@ -6,22 +6,31 @@
     gap: 16px;
     padding: 22px 25px;
     background: $color-footer-bg;
+
     &__title {
         color: white;
         font-family: $ff-title;
     }
+
     &__subtitle {
         display: flex;
         flex-direction: column;
-        gap: 7px;
+        gap: 5px;
+        
         &--icon {
             display: flex;
             align-items: center;
             gap: 12px;
         }
     }
+
+    &__gap {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
     a {
         color: white;
     }
-    
 }

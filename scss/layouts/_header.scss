@@ -11,13 +11,15 @@
 
 .menuHeader {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 55px;
   height: 63px;
-  padding-left: 17px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
   &__link {
+    position: absolute;
+    left: 15px;
     font-size: 20px;
   }
+
 }

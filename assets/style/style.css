@@ -88,6 +88,7 @@ a:any-link {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .header {
@@ -102,14 +103,14 @@ img {
 
 .menuHeader {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 55px;
   height: 63px;
-  padding-left: 17px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .menuHeader__link {
+  position: absolute;
+  left: 15px;
   font-size: 20px;
 }
 
@@ -127,12 +128,17 @@ img {
 .footer__subtitle {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
 }
 .footer__subtitle--icon {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.footer__gap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .footer a {
   color: white;
@@ -186,7 +192,7 @@ img {
   font-weight: 500;
   padding: 13px 18.75px;
   color: #FFF;
-  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(0deg, #9356DC -11%, #FF79DA 123%);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -215,13 +221,9 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 20px 35px;
+  padding: 30px 15px;
   gap: 18px;
   background: #F6F6F6;
-}
-.discover__title, .discover__subtitle {
-  display: flex;
-  flex-wrap: wrap;
 }
 .discover__button {
   margin: 10px 0;
@@ -249,7 +251,7 @@ img {
   display: flex;
   justify-content: start;
   align-items: center;
-  min-width: 322px;
+  width: 322px;
   height: 72px;
   gap: 20px;
   border-radius: 20px;
@@ -316,9 +318,6 @@ img {
 .menuMain {
   background: #F6F6F6;
 }
-.menuMain__img {
-  height: 275px;
-}
 .menuMain__menu {
   padding: 0 17px;
   border-radius: 40px 40px 0 0;
@@ -337,8 +336,8 @@ img {
 .menuMain__container {
   display: flex;
   flex-direction: column;
-  padding: 0 13px;
   gap: 40px;
+  padding: 0 13px;
 }
 .menuMain__card {
   display: flex;
@@ -437,6 +436,40 @@ img {
 }
 .menuMain__label input:checked ~ .favorite {
   opacity: 1;
+}
+
+@media (max-width: 425px) {
+  * {
+    background: #ff7373;
+  }
+}
+@media (min-width: 425.1px) {
+  .discover__title {
+    font-size: 2.5rem;
+  }
+  .how-to-use__list {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px 100px;
+  }
+  .footer {
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 25px;
+    gap: 100px;
+  }
+  .footer__subtitle {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .footer__gap {
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
