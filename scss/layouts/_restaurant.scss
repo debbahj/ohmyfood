@@ -58,9 +58,10 @@
   &__container {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     position: relative;
     top: -60px;
-    gap: 40px;
+    margin-bottom: -60px;
     padding: 40px 15px;
     border-radius: 40px 40px 0 0;
     background: utils.$color-bg;
@@ -70,6 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
     &:hover {
       .menuMain__subtitle--underline {
         width: 100%;
