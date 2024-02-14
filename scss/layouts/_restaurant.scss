@@ -134,11 +134,11 @@
       transform: scale(1.05);
     }
 
-    &:hover .checked {
+    & input:checked ~ .checked {
       transform: translateX(-60px);
     }
 
-    &:hover .menuMain__dishe {
+    & input:checked ~ .menuMain__dishe {
       width: calc(100% - 60px);
     }
 
@@ -164,6 +164,7 @@
 
   &__label {
     cursor: pointer;
+
     & input {
       display: none;
     }

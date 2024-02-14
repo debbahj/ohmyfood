@@ -392,10 +392,10 @@ img {
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
-.menuMain__meal:hover .checked {
+.menuMain__meal input:checked ~ .checked {
   transform: translateX(-60px);
 }
-.menuMain__meal:hover .menuMain__dishe {
+.menuMain__meal input:checked ~ .menuMain__dishe {
   width: calc(100% - 60px);
 }
 .menuMain__meal .checked {
