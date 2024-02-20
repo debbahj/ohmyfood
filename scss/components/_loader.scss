@@ -1,7 +1,61 @@
+@use "../utils/" as *;
+
 .loader {
-  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: white;
+  z-index: 999;
+
+  animation: hide 2s forwards;
+
+  &__anim {
+    position: relative;
+    font-family: $ff-title;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0px 110px 50px -15px rgba(0, 0, 0, 0.25);
+
+    -webkit-text-stroke: 1px black;
+
+    &::before {
+      content: "CHARGEMENT...";
+      position: absolute;
+      background: $color-button;
+      animation: load 1.8s linear;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      background: $color-button;
+      animation: load 1.8s linear;
+    }
+  }
+
+  &__completion {
+    position: relative;
+    font-family: $ff-title;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+
+      animation: percent 1.8s ease-in-out;
+    }
+  }
 }

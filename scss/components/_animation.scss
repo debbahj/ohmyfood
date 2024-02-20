@@ -7,7 +7,6 @@
 }
 
 .animation {
-  
   &--delay-200ms {
     animation-delay: 0.2s;
   }
@@ -39,7 +38,8 @@
 }
 
 @keyframes slide {
-  0%, 20% {
+  0%,
+  20% {
     opacity: 0;
     transform: translateX(400px);
   }
@@ -48,8 +48,239 @@
     opacity: 0.8;
   }
 
-  80%, 100% {
+  80%,
+  100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  80% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-100vw, -100vh);
+  }
+}
+
+@keyframes percent {
+  0% {
+    content: "0%";
+  }
+  1% {
+    content: "1%";
+  }
+  2% {
+    content: "2%";
+  }
+  3% {
+    content: "3%";
+  }
+  4% {
+    content: "4%";
+  }
+  5% {
+    content: "5%";
+  }
+  10% {
+    content: "10%";
+  }
+  15% {
+    content: "15%";
+  }
+  20% {
+    content: "20%";
+  }
+  25% {
+    content: "25%";
+  }
+  26% {
+    content: "26%";
+  }
+  27% {
+    content: "27%";
+  }
+  28% {
+    content: "28%";
+  }
+  29% {
+    content: "29%";
+  }
+  30% {
+    content: "30%";
+  }
+  31% {
+    content: "31%";
+  }
+  32% {
+    content: "32%";
+  }
+  33% {
+    content: "33%";
+  }
+  34% {
+    content: "34%";
+  }
+  35% {
+    content: "35%";
+  }
+  36% {
+    content: "36%";
+  }
+  37% {
+    content: "37%";
+  }
+  38% {
+    content: "38%";
+  }
+  39% {
+    content: "39%";
+  }
+  40% {
+    content: "40%";
+  }
+  46% {
+    content: "46%";
+  }
+  47% {
+    content: "47%";
+  }
+  48% {
+    content: "48%";
+  }
+  49% {
+    content: "49%";
+  }
+  50% {
+    content: "50%";
+  }
+  51% {
+    content: "51%";
+  }
+  52% {
+    content: "52%";
+  }
+  53% {
+    content: "53%";
+  }
+  54% {
+    content: "54%";
+  }
+  55% {
+    content: "55%";
+  }
+  56% {
+    content: "56%";
+  }
+  57% {
+    content: "57%";
+  }
+  63% {
+    content: "63%";
+  }
+  64% {
+    content: "64%";
+  }
+  65% {
+    content: "65%";
+  }
+  66% {
+    content: "66%";
+  }
+  67% {
+    content: "67%";
+  }
+  68% {
+    content: "68%";
+  }
+  69% {
+    content: "69%";
+  }
+  70% {
+    content: "70%";
+  }
+  71% {
+    content: "71%";
+  }
+  72% {
+    content: "72%";
+  }
+  73% {
+    content: "73%";
+  }
+  74% {
+    content: "74%";
+  }
+  79% {
+    content: "79%";
+  }
+  80% {
+    content: "80%";
+  }
+  81% {
+    content: "81%";
+  }
+  82% {
+    content: "82%";
+  }
+  83% {
+    content: "83%";
+  }
+  84% {
+    content: "84%";
+  }
+  85% {
+    content: "85%";
+  }
+  86% {
+    content: "86%";
+  }
+  90% {
+    content: "90%";
+  }
+  91% {
+    content: "91%";
+  }
+  94% {
+    content: "94%";
+  }
+  95% {
+    content: "95%";
+  }
+  96% {
+    content: "96%";
+  }
+  97% {
+    content: "97%";
+  }
+  98% {
+    content: "98%";
+  }
+  99% {
+    content: "99%";
+  }
+  100% {
+    content: "100%";
   }
 }
