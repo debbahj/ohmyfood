@@ -11,6 +11,9 @@
     background: utils.$color-bg;
 
     &__button {
+        display: flex;
+        place-items: center;
+        color: utils.$color-button-text !important;
         margin: 10px 0;
     }
 }
