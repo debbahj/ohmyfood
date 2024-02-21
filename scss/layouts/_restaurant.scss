@@ -47,21 +47,27 @@
 }
 
 .menuMain {
-  
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+
+    &--gap {
+      height: 55vw;
+    }
+  }
+
   &__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
   }
-  
+
   &__container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    position: relative;
-    top: -60px;
-    margin-bottom: -60px;
     padding: 40px 15px;
     border-radius: 40px 40px 0 0;
     background: utils.$color-bg;
@@ -93,16 +99,20 @@
 
   &__dishe {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
     padding: 15px;
+    width: 100%;
     transition: width 0.25s cubic-bezier(0.2, 0.5, 0.3, 1);
 
     &--desc {
       display: flex;
       flex-direction: column;
       gap: 5px;
+      width: calc(100% - 30px);
+    }
+    &--price {
+      display: flex;
+      justify-content: end;
+      align-items: end;
     }
   }
 
@@ -140,6 +150,7 @@
 
     & input:checked ~ .menuMain__dishe {
       width: calc(100% - 60px);
+      overflow: hidden;
     }
 
     & .checked {
@@ -186,6 +197,16 @@
 
     & input:checked ~ .favorite {
       opacity: 1;
+    }
+  }
+}
+
+@for $j from 0 through 2 {
+  .menuMain__card:nth-child(#{$j + 2}) {
+    @for $i from 0 through 3 {
+      label.menuMain__meal:nth-child(#{$i + 2}) {
+        animation-delay: #{(($i + $j * 4) * 200)}ms;
+      }
     }
   }
 }

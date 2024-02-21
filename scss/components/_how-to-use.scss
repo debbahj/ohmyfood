@@ -3,34 +3,38 @@
 .how-to-use {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding: 50px 15px;
+
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+
         &--item {
             display: flex;
             justify-content: start;
             align-items: center;
             width: 322px;
+            max-width: 100%;
             height: 72px;
             gap: 20px;
             border-radius: 20px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             background: utils.$color-bg;
         }
+
         &--number {
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            left: -12px;
-            width: 24px;
-            height: 24px;
+            left: -10px;
+            height: 20px;
+            aspect-ratio: 1;
             color: white;
-            border-radius: 20px;
+            border-radius: 50%;
             background: utils.$color-primary;
         }
     }

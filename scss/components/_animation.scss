@@ -3,7 +3,9 @@
 }
 
 .slide {
-  animation: slide 1.2s cubic-bezier(0.42, 1, 1, 1.15);
+  opacity: 0;
+  transform: translateY(400px);
+  animation: slide 1.2s cubic-bezier(0.42, 1, 1, 1.15) forwards;
 }
 
 .animation {
@@ -41,7 +43,7 @@
   0%,
   20% {
     opacity: 0;
-    transform: translateX(400px);
+    transform: translateY(400px);
   }
 
   50% {
@@ -51,7 +53,7 @@
   80%,
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

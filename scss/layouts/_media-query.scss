@@ -1,10 +1,8 @@
 @use "../utils/index" as *;
 
-$tablet: 425px;
+$tablet: 768px;
 
 @media ( width > $tablet) {
-  // COMMENT FAIRE UNE GRID AVEC REPEAT(AUTOFIT, MINMAX) ???
-
   .header,
   .menuHeader {
     height: 93px;
