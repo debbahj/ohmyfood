@@ -47,7 +47,6 @@
 }
 
 .menuMain {
-
   &__img {
     position: absolute;
     z-index: -1;
@@ -107,7 +106,8 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
-      width: calc(100% - 30px);
+      // width: calc(100% - 30px);
+      width: 100%;
     }
     &--price {
       display: flex;
@@ -130,6 +130,7 @@
   }
 
   &__meal {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     background: white;
@@ -140,20 +141,19 @@
 
     &:hover {
       background: lighten(utils.$color-tertiary, 20);
-      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
-      transform: scale(1.05);
+      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px utils.$color-tertiary;
+
+      & .checked {
+        transform: translateX(-60px);
+      }
+
+      & .menuMain__dishe {
+        width: calc(100% - 60px); // Decalage du prix quand .checked apparait
+      }
     }
 
-    & input:checked ~ .checked {
-      transform: translateX(-60px);
-    }
-
-    & input:checked ~ .menuMain__dishe {
-      width: calc(100% - 60px);
-      overflow: hidden;
-    }
-
-    & .checked {
+    .checked {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -163,8 +163,7 @@
       width: 60px;
       height: 100%;
       background: utils.$color-tertiary;
-      transform: translateX(0px);
-      transition: transform 0.5s cubic-bezier(0.2, 0.5, 0.3, 1);
+      transition: transform 0.5s ease-in-out;
 
       & .fas {
         color: #fff;
@@ -174,10 +173,12 @@
   }
 
   &__label {
-    cursor: pointer;
-
     & input {
       display: none;
+
+      &:checked ~ .favorite {
+        opacity: 1;
+      }
     }
 
     & .favorite {
@@ -193,20 +194,6 @@
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
-    }
-
-    & input:checked ~ .favorite {
-      opacity: 1;
-    }
-  }
-}
-
-@for $j from 0 through 2 {
-  .menuMain__card:nth-child(#{$j + 2}) {
-    @for $i from 0 through 3 {
-      label.menuMain__meal:nth-child(#{$i + 2}) {
-        animation-delay: #{(($i + $j * 4) * 200)}ms;
-      }
     }
   }
 }

@@ -284,7 +284,7 @@ img {
   position: relative;
   left: -10px;
   height: 20px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   color: white;
   border-radius: 50%;
   background: #9356DC;
@@ -300,11 +300,43 @@ img {
   animation: slide 1.2s cubic-bezier(0.42, 1, 1, 1.15) forwards;
 }
 
-.animation--delay-200ms {
-  animation-delay: 0.2s;
+.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(2) {
+  animation-delay: 0ms;
 }
-.animation--delay-400ms {
-  animation-delay: 0.4s;
+.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(3) {
+  animation-delay: 200ms;
+}
+.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(5) {
+  animation-delay: 600ms;
+}
+
+.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(2) {
+  animation-delay: 800ms;
+}
+.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(3) {
+  animation-delay: 1000ms;
+}
+.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(4) {
+  animation-delay: 1200ms;
+}
+.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(5) {
+  animation-delay: 1400ms;
+}
+
+.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(2) {
+  animation-delay: 1600ms;
+}
+.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(3) {
+  animation-delay: 1800ms;
+}
+.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(4) {
+  animation-delay: 2000ms;
+}
+.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(5) {
+  animation-delay: 2200ms;
 }
 
 @keyframes wiggle {
@@ -696,7 +728,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: calc(100% - 30px);
+  width: 100%;
 }
 .menuMain__dishe--price {
   display: flex;
@@ -714,6 +746,7 @@ img {
   width: 185px;
 }
 .menuMain__meal {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   background: white;
@@ -723,15 +756,13 @@ img {
 }
 .menuMain__meal:hover {
   background: #e8f9f5;
-  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2), inset 0 0 0 1px #99E2D0;
 }
-.menuMain__meal input:checked ~ .checked {
+.menuMain__meal:hover .checked {
   transform: translateX(-60px);
 }
-.menuMain__meal input:checked ~ .menuMain__dishe {
+.menuMain__meal:hover .menuMain__dishe {
   width: calc(100% - 60px);
-  overflow: hidden;
 }
 .menuMain__meal .checked {
   display: flex;
@@ -743,18 +774,17 @@ img {
   width: 60px;
   height: 100%;
   background: #99E2D0;
-  transform: translateX(0px);
-  transition: transform 0.5s cubic-bezier(0.2, 0.5, 0.3, 1);
+  transition: transform 0.5s ease-in-out;
 }
 .menuMain__meal .checked .fas {
   color: #fff;
   font-size: 1.25rem;
 }
-.menuMain__label {
-  cursor: pointer;
-}
 .menuMain__label input {
   display: none;
+}
+.menuMain__label input:checked ~ .favorite {
+  opacity: 1;
 }
 .menuMain__label .favorite {
   opacity: 0;
@@ -765,48 +795,6 @@ img {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-}
-.menuMain__label input:checked ~ .favorite {
-  opacity: 1;
-}
-
-.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(2) {
-  animation-delay: 0ms;
-}
-.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(3) {
-  animation-delay: 200ms;
-}
-.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(4) {
-  animation-delay: 400ms;
-}
-.menuMain__card:nth-child(2) label.menuMain__meal:nth-child(5) {
-  animation-delay: 600ms;
-}
-
-.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(2) {
-  animation-delay: 800ms;
-}
-.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(3) {
-  animation-delay: 1000ms;
-}
-.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(4) {
-  animation-delay: 1200ms;
-}
-.menuMain__card:nth-child(3) label.menuMain__meal:nth-child(5) {
-  animation-delay: 1400ms;
-}
-
-.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(2) {
-  animation-delay: 1600ms;
-}
-.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(3) {
-  animation-delay: 1800ms;
-}
-.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(4) {
-  animation-delay: 2000ms;
-}
-.menuMain__card:nth-child(4) label.menuMain__meal:nth-child(5) {
-  animation-delay: 2200ms;
 }
 
 @media (width > 768px) {

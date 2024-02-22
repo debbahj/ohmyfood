@@ -24,14 +24,18 @@
 
   <main class="menuMain">
 
+    <!-- IMAGE DU RESTAURANT -->
     <img class="menuMain__img"
       src="../assets/Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
       alt="Image du restaurant">
     
+      <!-- DIV DE GAP POUR LA POSITION DU MENU (Alternative au 'margin-bottom: "-60px"' pour le contenaire du menu) -->
     <div class="menuMain__img--gap"></div>
 
+    <!-- CONTENAIRE DU MENU -->
     <section class="menuMain__container">
 
+      <!-- TITRE DU MENU -->
       <div class="menuMain__title">
         <div class="menuMain__title--title">
           <h1 class="font__menu--restaurant">À la française</h1>
@@ -48,32 +52,15 @@
         </div>
       </div>
 
+      <!-- SECTIONS DES ENTRÉES -->
       <section class="menuMain__card">
         <div class="menuMain__entree menuMain__subtitle">
           <h2 class="font__menu--desc">ENTRÉES</h2>
           <div class="menuMain__subtitle--underline"></div>
         </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
-          <span class="menuMain__dishe">
-            <span class="menuMain__dishe--desc">
-              <span class="ellipsis font__menu--dishe">
-                1-Tartare de poulpe acidulé
-              </span>
-              <span class="ellipsis font__menu--desc">Aux zestes d'orange</span>
-            </span>
-            <span class="menuMain__dishe--price font__menu--price">
-              25<span>€</span>
-            </span>
-          </span>
-          <span class="checked">
-            <i class="fas fa-check-circle"></i>
-          </span>
-        </label>
-
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- ENTRÉE 1 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -88,10 +75,10 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- ENTRÉES 2 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -106,17 +93,37 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
+
+        <!-- ENTRÉES 3 -->
+        <div class="menuMain__meal slide">
+          <span class="menuMain__dishe">
+            <span class="menuMain__dishe--desc">
+              <span class="ellipsis font__menu--dishe">
+                Tartare de poulpe acidulé
+              </span>
+              <span class="ellipsis font__menu--desc">Aux zestes d'orange</span>
+            </span>
+            <span class="menuMain__dishe--price font__menu--price">
+              25<span>€</span>
+            </span>
+          </span>
+          <span class="checked">
+            <i class="fas fa-check-circle"></i>
+          </span>
+        </div>
       </section>
+      <!-- FIN DE LA SECTION DES ENTRÉES -->
 
+      <!-- SECTION DES PLATS -->
       <section class="menuMain__card">
         <div class="menuMain__plat menuMain__subtitle">
           <h2 class="font__menu--desc">PLATS</h2>
           <div class="menuMain__subtitle--underline"></div>
         </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- PLAT 1 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -131,10 +138,10 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- PLAT 2 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -149,10 +156,10 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- PLAT 3 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -167,17 +174,19 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
       </section>
+      <!-- FIN DE LA SECTION DES PLATS -->
 
+      <!-- SECTION DESSERTS -->
       <section class="menuMain__card">
         <div class="menuMain__desert menuMain__subtitle">
           <h2 class="font__menu--desc">DESSERTS</h2>
           <div class="menuMain__subtitle--underline"></div>
         </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- DESSERT 1 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -192,10 +201,28 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
+        </div>
+        
+        <!-- DESSERT 2 -->
+        <div class="menuMain__meal slide">
+          <span class="menuMain__dishe">
+            <span class="menuMain__dishe--desc">
+              <span class="ellipsis font__menu--dishe">
+                Tartare de poulpe acidulé
+              </span>
+              <span class="ellipsis font__menu--desc">Aux zestes d'orange</span>
+            </span>
+            <span class="menuMain__dishe--price font__menu--price">
+              25<span>€</span>
+            </span>
+          </span>
+          <span class="checked">
+            <i class="fas fa-check-circle"></i>
+          </span>
+        </div>
 
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
+        <!-- DESSERT 3 -->
+        <div class="menuMain__meal slide">
           <span class="menuMain__dishe">
             <span class="menuMain__dishe--desc">
               <span class="ellipsis font__menu--dishe">
@@ -210,27 +237,11 @@
           <span class="checked">
             <i class="fas fa-check-circle"></i>
           </span>
-        </label>
-
-        <label class="menuMain__label menuMain__meal slide">
-          <input type="checkbox">
-          <span class="menuMain__dishe">
-            <span class="menuMain__dishe--desc">
-              <span class="ellipsis font__menu--dishe">
-                Tartare de poulpe acidulé
-              </span>
-              <span class="ellipsis font__menu--desc">Aux zestes d'orange</span>
-            </span>
-            <span class="menuMain__dishe--price font__menu--price">
-              25<span>€</span>
-            </span>
-          </span>
-          <span class="checked">
-            <i class="fas fa-check-circle"></i>
-          </span>
-        </label>
+        </div>
       </section>
+      <!-- FIN DE LA SECTION DES DESSERTS -->
 
+      <!-- BOUTTON POUR COMMANDER -->
       <div class="menuMain__button">
         <a href="#" class="button lighten link">Commander</a>
       </div>

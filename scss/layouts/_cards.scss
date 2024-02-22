@@ -1,5 +1,6 @@
 @use "../utils/variables" as var;
 
+// Cards des differents restaurants proposé
 .restaurant__card {
     position: relative;
     background: white;
@@ -20,6 +21,7 @@
     }
 }
 
+// Encoche/fiche 'Nouveau' des nouveaux restaurant ajoutée
 .new {
     position: relative;
     &::after {
