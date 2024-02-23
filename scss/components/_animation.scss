@@ -8,22 +8,11 @@
   animation: slide 1.2s cubic-bezier(0.42, 1, 1, 1.15) forwards;
 }
 
-// Classe pour le delay
-// .animation {
-//   &--delay-200ms {
-//     animation-delay: 0.2s;
-//   }
-
-//   &--delay-400ms {
-//     animation-delay: 0.4s;
-//   }
-// }
-
 // Boucle de delay pour chaque plats qui arrive les uns apres les autres
 @for $j from 0 through 2 {
   .menuMain__card:nth-child(#{$j + 2}) {
     @for $i from 0 through 3 {
-      label.menuMain__meal:nth-child(#{$i + 2}) {
+      .menuMain__meal:nth-child(#{$i + 2}) {
         animation-delay: #{(($i + $j * 4) * 200)}ms;
       }
     }

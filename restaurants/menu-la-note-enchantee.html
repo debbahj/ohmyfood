@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - La note enchantée</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+  </head>
+
+  <body>
+    <header class="menuHeader">
+      <a href="../index.html" class="menuHeader__link">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <img
+        class="header__logo"
+        src="../assets/Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg"
+        alt="Logo de Ohmyfood"
+      >
+    </header>
+
+    <main class="menuMain">
+      <!-- IMAGE DU RESTAURANT -->
+      <img
+        class="menuMain__img"
+        src="../assets/Images-et-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+        alt="Image du restaurant"
+      >
+
+      <!-- DIV DE GAP POUR LA POSITION DU MENU (Alternative au 'margin-bottom: "-60px"' pour le contenaire du menu) -->
+      <div class="menuMain__img--gap"></div>
+
+      <!-- CONTENAIRE DU MENU -->
+      <section class="menuMain__container">
+        <!-- TITRE DU MENU -->
+        <div class="menuMain__title">
+          <div class="menuMain__title--title">
+            <h1 class="font__menu--restaurant">La note enchantée</h1>
+          </div>
+
+          <div class="menuMain__title--icon">
+            <label class="menuMain__label">
+              <span class="fa-stack">
+                <input type="checkbox">
+                <i class="far fa-stack-1x fa-heart unfavorite"></i>
+                <i class="fas fa-stack-1x fa-heart favorite"></i>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- SECTIONS DES ENTRÉES -->
+        <section class="menuMain__card">
+          <div class="menuMain__entree menuMain__subtitle">
+            <h2 class="font__menu--desc">ENTRÉES</h2>
+            <div class="menuMain__subtitle--underline"></div>
+          </div>
+
+          <!-- ENTRÉE 1 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                 Ravioles de foie gras 
+                </h3>
+                <p class="ellipsis font__menu--desc">Accompagnées de leur crème à la truffe</p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                25<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- ENTRÉES 2 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                  Caviar osciètre 
+                </h3>
+                <p class="ellipsis font__menu--desc">
+                  Sur blini à la farine de blé noir
+                </p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                35<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- ENTRÉES 3 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">Homard et espuma de potiron</h3>
+                <p class="ellipsis font__menu--desc">Marinés aux zestes d'orange</p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                20<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- ENTRÉES 4 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">Foie gras de canard cuit entier</h3>
+                <p class="ellipsis font__menu--desc">Confiture de figue et pain toasté</p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                35<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+        </section>
+
+        <!-- SECTION DES PLATS -->
+        <section class="menuMain__card">
+          <div class="menuMain__plat menuMain__subtitle">
+            <h2 class="font__menu--desc">PLATS</h2>
+            <div class="menuMain__subtitle--underline"></div>
+          </div>
+
+          <!-- PLAT 1 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                  Noix de coquilles Saint-Jacques
+                </h3>
+                <p class="ellipsis font__menu--desc">
+                  Sur lit de purée de céleri-rave
+                </p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                40<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- PLAT 2 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">Langoustine poêlée</h3>
+                <p class="ellipsis font__menu--desc">
+                  Purée de patate douce
+                </p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                35<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- PLAT 3 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                  Mijoté de queue de bœuf 
+                </h3>
+                <p class="ellipsis font__menu--desc">
+                  Et riz sauvage aux zestes de citron
+                </p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                45<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+        </section>
+
+        <!-- SECTION DESSERTS -->
+        <section class="menuMain__card">
+          <div class="menuMain__desert menuMain__subtitle">
+            <h2 class="font__menu--desc">DESSERTS</h2>
+            <div class="menuMain__subtitle--underline"></div>
+          </div>
+
+          <!-- DESSERT 1 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                  Macaron noisette et chocolat
+                </h3>
+                <p class="ellipsis font__menu--desc">Glace au caramel brun et sel de Guérande</p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                18<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- DESSERT 2 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">Baba au rhum revisité </h3>
+                <p class="ellipsis font__menu--desc">Avec son coulis de citron</p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                22<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+
+          <!-- DESSERT 3 -->
+          <div class="menuMain__meal slide">
+            <div class="menuMain__dishe">
+              <div class="menuMain__dishe--desc">
+                <h3 class="ellipsis font__menu--dishe">
+                  Tarte au citron meringuée 
+                </h3>
+                <p class="ellipsis font__menu--desc">
+                  Déstructurée
+                </p>
+              </div>
+              <p class="menuMain__dishe--price font__menu--price">
+                23<span>€</span>
+              </p>
+            </div>
+            <i class="fas fa-check-circle checked"></i>
+          </div>
+        </section>
+
+        <!-- BOUTTON POUR COMMANDER -->
+        <div class="menuMain__button">
+          <a href="#" class="button lighten link">Commander</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a href="./index.html">
+          <p class="footer__title font__home--footer">ohmyfood</p>
+        </a>
+      </div>
+      <div class="footer__subtitle font__home--footer--desc">
+        <div class="footer__gap">
+          <a href="#">
+            <p class="footer__subtitle--icon">
+              <i class="fas fa-utensils"></i>Proposer un restaurant
+            </p>
+          </a>
+          <a href="#">
+            <p class="footer__subtitle--icon">
+              <i class="fas fa-handshake-angle"></i>Devenir partenaire
+            </p>
+          </a>
+        </div>
+        <div class="footer__gap">
+          <a href="#">
+            <p>Mentions légales</p>
+          </a>
+          <a href="mailto:#">
+            <p>Contact</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

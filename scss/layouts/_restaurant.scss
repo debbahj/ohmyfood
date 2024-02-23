@@ -162,13 +162,10 @@
       right: -60px;
       width: 60px;
       height: 100%;
+      color: white;
+      font-size: 1.25rem;
       background: utils.$color-tertiary;
       transition: transform 0.5s ease-in-out;
-
-      & .fas {
-        color: #fff;
-        font-size: 1.25rem;
-      }
     }
   }
 
