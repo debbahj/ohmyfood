@@ -845,6 +845,13 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .menuMain__img {
+    width: 100%;
+    height: 70vh;
+  }
+  .menuMain__img--gap {
+    height: 50vw;
+  }
   .menuMain__title {
     justify-content: center;
   }
