@@ -1,5 +1,6 @@
 @use "../utils/variables" as utils;
 
+// Barre de recherche en dessous du header
 .location {
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@
     height: 50px;
     background: utils.$color-input-bg;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
     &__input {
         border: none;
         outline: none;
