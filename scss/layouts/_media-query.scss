@@ -66,11 +66,10 @@ $tablet: 768px;
     flex-direction: column;
 
     &__img {
-      width: 100%;
-      height: 70vh;
+      max-height: 385px;
 
       &--gap {
-        height: 50vw;
+        height: 360px;
       }
     }
 
